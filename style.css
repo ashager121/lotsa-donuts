@@ -13,3 +13,8 @@
     height: 250px;
     object-fit: cover;
 }
+.intro h1{
+    border-style: dotted;
+    border: 1px solid black;
+    padding: 10px;
+}
