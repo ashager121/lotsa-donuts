@@ -2,6 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
 }
+img {
+    width: 100%;
+}
 .banner {
     background-image: url('/images/banner-donuts.jpg');
     background-position: center center;
@@ -10,17 +13,21 @@ html, body {
     height: 40vh;
     transition: height .25s ease-in-out;
 }
-.donut-pics {
+.donut-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.donut {
-    width: 50%;
-    padding: 25px;
+.donut-pics {
+    width: 100%;
 }
-.donut img {
+wrapper {
+    padding: 10px;
+    height: 100%;
+    display: block;
+}
+.donut-pics img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -30,10 +37,12 @@ html, body {
     border: 1px solid black;
     padding: 10px;
 }
-@media (min-width: 720) {
-    .donut-pics {
-        display: flex;
+@media (min-width: 720px) {
+    .donut-wrapper{
         flex-direction: row;
-        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .donut-pics {
+        width: 33.33%;
     }
 }
