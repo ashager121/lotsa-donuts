@@ -30,3 +30,10 @@ html, body {
     border: 1px solid black;
     padding: 10px;
 }
+@media (min-width: 720) {
+    .donut-pics {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+}
