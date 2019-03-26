@@ -1,3 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    background-image: url('images/banner-donuts.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    transition: height .25s ease-in-out;
+}
 .donut-pics {
     display: flex;
     flex-direction: column;
